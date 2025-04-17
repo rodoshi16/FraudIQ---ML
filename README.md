@@ -1,6 +1,6 @@
 # **FraudIQ – ML Risk Analysis Tool**
 
-FraudIQ is a machine learning-powered fraud detection prototype designed to help financial institutions assess the risk of credit card transactions.
+FraudIQ is a machine learning-powered tool for assessing the risk of credit card transactions. Built as a full-stack prototype, it allows users to interact with a logistic regression model in real time and generate transaction risk reports.
 
 ![FraudIQ Dashboard](https://github.com/user-attachments/assets/53ddb62e-ad69-4334-8db1-4c7dbbdc63ac)
 
@@ -9,42 +9,45 @@ FraudIQ is a machine learning-powered fraud detection prototype designed to help
 ## 🚀 **Key Features**
 
 - **Logistic Regression Model**  
-  Trained on a dataset of 284,807 transactions with a validation accuracy of **97.5%**.
+  Trained on 284,807 credit card transactions with a validation accuracy of **97.5%**.
 
 - **Risk Scoring System**  
-  Assigns a fraud risk score (0–100) based on model probability, categorized into **Low**, **Medium**, or **High Risk**.
+  Calculates a fraud risk score (0–100) and classifies transactions into **Low**, **Medium**, or **High Risk**.
 
-- **Real-Time Fraud Analysis**  
-  Processes transaction data and returns instant risk evaluations.
+- **Real-Time Analysis**  
+  Users input transaction amount and time, and receive immediate risk evaluations.
 
 - **Risk Summary Report**  
-  Generates a PDF report summarizing total transactions, percentage of each risk category, and key statistics like average and max score.
+  Generates a downloadable PDF summarizing the number of transactions, risk distribution, average score, and max score.
 
 ---
 
 ## 🧑‍💻 **Tech Stack**
 
 - **Frontend**: React.js  
-  Styled to resemble the **S&P Global Market Intelligence** UI.
+  Interactive dashboard with chart visualizations using Recharts.
 
 - **Backend**: Flask  
-  REST API to serve model predictions and generate reports.
+  REST API serving real-time predictions and generating risk reports.
 
 - **Machine Learning**:  
-  Logistic Regression (with **SMOTE** for handling class imbalance).
+  Logistic Regression using scikit-learn, with **SMOTE** to address class imbalance.
 
 ---
 
 ## 📊 **How It Works**
 
-1. **Transaction Input**  
-   Users enter transaction amount and time via the React dashboard.
+1. **User Input**  
+   Enter transaction amount and time through the React dashboard.
 
-2. **Risk Prediction**  
-   Backend returns a risk score from the trained logistic regression model, assigning a risk category.
+2. **Prediction**  
+   Backend model returns a risk score and level based on the trained logistic regression model.
 
-3. **Insights Dashboard**  
-   Displays results through interactive charts (built with Recharts) styled after the S&P UI.
+3. **Visualization**  
+   View results through a dynamic chart and summary card.
+
+4. **Report Generation**  
+   Instantly generate a downloadable PDF with all relevant transaction risk data.
 
 ---
 
@@ -61,7 +64,7 @@ pip install -r requirements.txt
 # Run the backend
 python app.py
 
-# Navigate to the frontend directory
+# Navigate to frontend directory
 cd client
 
 # Install frontend dependencies
