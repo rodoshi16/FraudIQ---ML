@@ -20,9 +20,6 @@ FraudIQ is a machine learning-powered fraud detection prototype designed to help
 - **Risk Summary Report**  
   Generates a PDF report summarizing total transactions, percentage of each risk category, and key statistics like average and max score.
 
-- **Market Intelligence Integration**  
-  Includes a dedicated button linking directly to **S&P Global’s Market Intelligence** platform for extended financial analysis.
-
 ---
 
 ## 🧑‍💻 **Tech Stack**
@@ -48,9 +45,6 @@ FraudIQ is a machine learning-powered fraud detection prototype designed to help
 
 3. **Insights Dashboard**  
    Displays results through interactive charts (built with Recharts) styled after the S&P UI.
-
-4. **Market Intelligence Access**  
-   Users can explore more financial data through a redirect to the Market Intelligence platform.
 
 ---
 
