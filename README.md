@@ -1,39 +1,77 @@
-**FraudIQ - ML Risk Analysis tool** 
-FraudIQ is an intelligent fraud detection tool designed to help financial institutions assess transaction risks. 
+# **FraudIQ – ML Risk Analysis Tool**
 
-![473E4778-C793-4570-BBF0-7A046F12B711](https://github.com/user-attachments/assets/53ddb62e-ad69-4334-8db1-4c7dbbdc63ac)
+FraudIQ is a machine learning-powered fraud detection prototype designed to help financial institutions assess the risk of credit card transactions.
 
+![FraudIQ Dashboard](https://github.com/user-attachments/assets/53ddb62e-ad69-4334-8db1-4c7dbbdc63ac)
 
-🚀 **Key Features**
-**Logistic Regression Model**: Implements a Logistic Regression Machine Learning model trained with a dataset of 284,807 transactions with a validation accuracy of 97.5%
-**Risk Scoring System**: Assigns a probability-based fraud risk score (0-100) to transactions.
-**Real-Time Fraud Analysis**: Processes transaction data and provides instant risk assessments.
-**Risk Summary Report**: Click Generate Report to instantly view the Total number of transactions, Percentage of High, Medium and Low Risk along with the Average and Max scores.
-**Market Intelligence Integration**: Includes a dedicated Market Intelligence button that redirects users to S&P Global’s Market Intelligence platform for further financial insights.
+---
 
-🧑‍💻 **Tech Stack**
-**Frontend**: React.js (Styled to reflect S&P Global’s Market Intelligence UI)
-**Backend**: Flask (REST API for transaction risk analysis)
-**Machine Learning**: Logistic Regression with SMOTE for handling class imbalance
+## 🚀 **Key Features**
 
-📊 **How It Works**
-**Transaction Input**: Users enter transaction details (Amount & Time).
-**Risk Prediction**: The logistic regression model calculates a risk score and categorizes transactions as Low, Medium, or High risk.
-**Insights Dashboard**: View risk distribution through interactive charts styled after S&P Global’s Market Intelligence UI.
-**Market Intelligence Access**: A Market Intelligence button redirects users to S&P Global’s Market Intelligence platform for additional financial insights.
+- **Logistic Regression Model**  
+  Trained on a dataset of 284,807 transactions with a validation accuracy of **97.5%**.
 
-🖥️ **Installation & Setup**
+- **Risk Scoring System**  
+  Assigns a fraud risk score (0–100) based on model probability, categorized into **Low**, **Medium**, or **High Risk**.
+
+- **Real-Time Fraud Analysis**  
+  Processes transaction data and returns instant risk evaluations.
+
+- **Risk Summary Report**  
+  Generates a PDF report summarizing total transactions, percentage of each risk category, and key statistics like average and max score.
+
+- **Market Intelligence Integration**  
+  Includes a dedicated button linking directly to **S&P Global’s Market Intelligence** platform for extended financial analysis.
+
+---
+
+## 🧑‍💻 **Tech Stack**
+
+- **Frontend**: React.js  
+  Styled to resemble the **S&P Global Market Intelligence** UI.
+
+- **Backend**: Flask  
+  REST API to serve model predictions and generate reports.
+
+- **Machine Learning**:  
+  Logistic Regression (with **SMOTE** for handling class imbalance).
+
+---
+
+## 📊 **How It Works**
+
+1. **Transaction Input**  
+   Users enter transaction amount and time via the React dashboard.
+
+2. **Risk Prediction**  
+   Backend returns a risk score from the trained logistic regression model, assigning a risk category.
+
+3. **Insights Dashboard**  
+   Displays results through interactive charts (built with Recharts) styled after the S&P UI.
+
+4. **Market Intelligence Access**  
+   Users can explore more financial data through a redirect to the Market Intelligence platform.
+
+---
+
+## 🖥️ **Installation & Setup**
+
+```bash
 # Clone the repository
 git clone https://github.com/your-username/FraudIQ.git
 cd FraudIQ
 
-# Install dependencies
+# Install backend dependencies
 pip install -r requirements.txt
 
 # Run the backend
 python app.py
 
-# Navigate to frontend and start React app
+# Navigate to the frontend directory
 cd client
+
+# Install frontend dependencies
 npm install
+
+# Start the React frontend
 npm start
