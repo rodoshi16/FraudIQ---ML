@@ -4,8 +4,6 @@ FraudIQ is a machine learning-powered tool for assessing the risk of credit card
 
 ![FraudIQ Dashboard](https://github.com/user-attachments/assets/53ddb62e-ad69-4334-8db1-4c7dbbdc63ac)
 
----
-
 ## 🚀 **Key Features**
 
 - **Logistic Regression Model**  
@@ -20,8 +18,6 @@ FraudIQ is a machine learning-powered tool for assessing the risk of credit card
 - **Risk Summary Report**  
   Generates a downloadable PDF summarizing the number of transactions, risk distribution, average score, and max score.
 
----
-
 ## 🧑‍💻 **Tech Stack**
 
 - **Frontend**: React.js  
@@ -32,8 +28,6 @@ FraudIQ is a machine learning-powered tool for assessing the risk of credit card
 
 - **Machine Learning**:  
   Logistic Regression using scikit-learn, with **SMOTE** to address class imbalance.
-
----
 
 ## 📊 **How It Works**
 
@@ -49,7 +43,6 @@ FraudIQ is a machine learning-powered tool for assessing the risk of credit card
 4. **Report Generation**  
    Instantly generate a downloadable PDF with all relevant transaction risk data.
 
----
 
 ## 🖥️ **Installation & Setup**
 
